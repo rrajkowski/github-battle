@@ -4,4 +4,4 @@ dist
 .idea/*
 
 ##Authentication
-app/utils/auth.js
+#app/utils/auth.js
