@@ -9,11 +9,6 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   devServer:{
-    contentBase: PATHS.build,
-    historyApiFallback: true,
-    hot: true,
-    inline: true,
-    progress: true,
     stats: 'errors-only',
     host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT || '8080'
