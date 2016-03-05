@@ -48,6 +48,7 @@ function Results(props){
     </MainContainer>
   )
 }
+
 Results.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   playersInfo: PropTypes.array.isRequired,
