@@ -20,7 +20,7 @@ function startOver(){
 function Results(props){
   if(props.isLoading === true){
     return(
-        <Loading />
+        <Loading text="hold on!" speed={100}/>
     )
   }
   if(props.scores[0] === props.scores[1]){

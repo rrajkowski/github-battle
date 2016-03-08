@@ -23,8 +23,8 @@ var Loading = React.createClass({
     text: PropTypes.string,
     speed: PropTypes.number,
   },
-  getDefaultProps: function () {
-    return {
+  getDefaultProps: function(){
+    return{
       text: 'Loading',
       speed: 300
     }
@@ -36,7 +36,7 @@ var Loading = React.createClass({
     }
   },
   componentDidMount: function () {
-    var stopper = this.originalText + '...'
+    var stopper = this.originalText + '...';
     this.interval = setInterval(function () {
       if (this.state.text === stopper) {
         this.setState({

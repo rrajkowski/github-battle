@@ -9,7 +9,7 @@ var ConfirmBattleContainer = React.createClass({
   getInitialState: function () {
     return {
       isLoading: true,
-      playersInfo: [],
+      playersInfo: []
     }
   },
   componentDidMount: function () {
