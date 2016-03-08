@@ -1,10 +1,8 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-  //__webpack_public_path__ : 'http://' + process.env.IP || '0.0.0.0:' + process.env.PORT || '8080',
   template: __dirname + '/app/index.html',
   filename: 'index.html',
-  inject: 'body',
-
+  inject: 'body'
 });
 
 module.exports = {
@@ -14,7 +12,6 @@ module.exports = {
     port: process.env.PORT || '8080'
   },
   entry: [
-    //'webpack-dev-server/client?http://0.0.0.0:80',
     './app/index.js'
   ],
   output: {
@@ -23,7 +20,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
+      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
+      {test: /\.css$/, loader: "style-loader!css-loader"}
     ]
   },
   plugins: [HTMLWebpackPluginConfig]
