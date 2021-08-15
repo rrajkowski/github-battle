@@ -1,6 +1,6 @@
 <img src="http://www.reactjsprogram.com/images/reactjsprogram-500.png" width="250" align="right">
 
-React.js Fundamentals Video Project
+React Github Battle
 ========
 
 ####This is the repository for the project we'll build together for React.js Program, for more information on the program [click here](http://reactjsprogram.com)
