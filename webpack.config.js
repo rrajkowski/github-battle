@@ -7,10 +7,11 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   devServer:{
+    hot: true,
     stats: 'errors-only',
     allowedHosts: 'all',
     host: process.env.HOST || '127.0.0.1',
-    port: process.env.PORT || 8080
+    port: process.env.PORT || 80
   },
   entry: [
     './app/index.js'
